@@ -21,6 +21,14 @@ body {
     background: linear-gradient(180deg, var(--soft-violet) 0%, var(--soft-blue) 83%);
 }
 
+.main-container {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    background-color: white;
+    margin: auto;
+}
+
 
 /* Frontmentor styles */
 
