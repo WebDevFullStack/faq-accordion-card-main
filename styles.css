@@ -23,11 +23,29 @@ body {
 
 .main-container {
     display: flex;
-    width: 70%;
+    width: 65%;
     justify-content: center;
+    align-items: center;
     background-color: white;
     margin: auto;
+    margin-top: 5%;
 }
+
+.faq-container {
+    padding: 50px;
+}
+
+
+/* Images */
+
+.person-img {
+    width: 100%;
+}
+
+
+/* .box-img {
+    position: absolute;
+} */
 
 
 /* Frontmentor styles */
