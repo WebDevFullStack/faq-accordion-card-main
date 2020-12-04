@@ -23,23 +23,31 @@ body {
 
 .main-container {
     display: flex;
-    width: 65%;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: white;
+    border-radius: 15px;
     margin: auto;
     margin-top: 5%;
+    width: 65%;
 }
 
 .faq-container {
-    padding: 50px;
+    flex: 1;
     margin: 25px;
+    padding-right: 80px;
+}
+
+.images-container {
+    flex: 1;
 }
 
 
 /* Images */
 
 .person-img {
+    flex-grow: 1;
     width: 100%;
 }
 
@@ -58,4 +66,19 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+/* breakpoints */
+
+
+/* Extra large devices (large laptops and desktops, 1000px and down) */
+
+@media only screen and (max-width: 1000px) {
+    body {
+        color: red;
+    }
+    .images-container {
+        flex: 2;
+    }
 }
