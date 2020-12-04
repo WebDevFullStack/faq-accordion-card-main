@@ -33,6 +33,7 @@ body {
 
 .faq-container {
     padding: 50px;
+    margin: 25px;
 }
 
 
@@ -42,10 +43,10 @@ body {
     width: 100%;
 }
 
-
-/* .box-img {
-    position: absolute;
-} */
+.box-img {
+    width: 50%;
+    margin-top: -400px;
+}
 
 
 /* Frontmentor styles */
