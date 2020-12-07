@@ -10,7 +10,7 @@
     --soft-violet: hsl(273, 75%, 66%);
     --soft-blue: hsl(240, 73%, 65%);
     /* Dividers */
-    --lgray-blue: hsl(240, 5%, 91%);
+    --divider-blue: hsl(240, 5%, 91%);
 }
 
 body {
@@ -18,10 +18,13 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
     background: linear-gradient(180deg, var(--soft-violet) 0%, var(--soft-blue) 83%);
+    overflow: hidden;
 }
 
 .main-container {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -31,16 +34,29 @@ body {
     margin: auto;
     margin-top: 5%;
     width: 65%;
+    height: 500px;
 }
 
 .faq-container {
     flex: 1;
-    margin: 25px;
+    margin-left: 25px;
     padding-right: 80px;
+}
+
+.arrow {
+    position: relative;
+    float: right;
 }
 
 .images-container {
     flex: 1;
+}
+
+.divider {
+    height: 1.5px;
+    width: 100%;
+    margin: 15px 0;
+    background-color: var(--divider-blue);
 }
 
 
@@ -54,6 +70,13 @@ body {
 .box-img {
     width: 50%;
     margin-top: -400px;
+}
+
+
+/* Display */
+
+.hidden {
+    display: none;
 }
 
 
@@ -72,13 +95,17 @@ body {
 /* breakpoints */
 
 
-/* Extra large devices (large laptops and desktops, 1000px and down) */
+/*(Anything 1000px and down) */
 
 @media only screen and (max-width: 1000px) {
     body {
-        color: red;
+        text-align: center;
     }
     .images-container {
-        flex: 2;
+        flex: none;
+        width: 65%;
+    }
+    .main-container {
+        height: auto;
     }
 }
