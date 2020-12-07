@@ -21,3 +21,17 @@ body {
     font-size: 18px;
     background: linear-gradient(180deg, var(--soft-violet) 0%, var(--soft-blue) 83%);
 }
+
+.main-container {
+    background-color: white;
+}
+
+
+/* Frontend mentor Styles */
+
+.attribution {
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    bottom: 0;
+}
