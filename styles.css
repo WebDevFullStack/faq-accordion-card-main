@@ -57,7 +57,9 @@ body {
     color: var(--desaturated-blue)
 }
 
-.question-wrapper {}
+.question-wrapper {
+    cursor: pointer;
+}
 
 .question {
     color: var(--vdark-gray-blue)
