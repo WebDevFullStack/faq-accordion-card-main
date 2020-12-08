@@ -24,10 +24,62 @@ body {
 
 .main-container {
     display: flex;
+    flex: row wrap;
     margin: auto;
     margin-top: 100px;
-    background-color: white;
-    max-width: 950px;
+    background-color: rgb(255, 255, 255);
+    max-width: 1200px;
+    border-radius: 30px;
+}
+
+.images-container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -280px -150px;
+}
+
+.person-img {}
+
+.box-img {
+    position: absolute;
+    margin-top: 120px;
+    margin-right: 40px;
+}
+
+.faq-container {
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.title {
+    color: var(--desaturated-blue)
+}
+
+.question-wrapper {}
+
+.question {
+    color: var(--vdark-gray-blue)
+}
+
+.arrow {
+    margin-left: 50px;
+    float: right;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider-blue);
+    margin: 20px 0;
+}
+
+
+/* Hidden styles */
+
+.hidden {
+    display: none;
 }
 
 
