@@ -67,6 +67,7 @@ body {
 }
 
 .question-wrapper {
+    position: relative;
     max-width: 380px;
     word-wrap: break-word;
     cursor: pointer;
@@ -76,7 +77,13 @@ body {
     color: var(--vdark-gray-blue)
 }
 
+.answer {
+    margin-top: 15px;
+}
+
 .arrow {
+    position: absolute;
+    top: 0;
     margin-left: 50px;
     float: right;
 }
@@ -89,10 +96,14 @@ body {
 }
 
 
-/* Hidden styles */
+/* dynamic styles */
 
 .hidden {
     display: none;
+}
+
+.active-question {
+    font-weight: 900;
 }
 
 
