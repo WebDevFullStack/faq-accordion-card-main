@@ -50,8 +50,13 @@ function toggleQuestion(clickedElement) {
     clickedElement.querySelector(".question").classList.toggle("active-question");
 
     var answer = clickedElement.querySelector(".answer");
-    // answer.classList.toggle("displayed");
-    answer.classList.toggle("hidden");
+
+    // smooth animated accordion
+    if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+    } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+    }
 }
 
 function arrowRotate(clickedElement) {

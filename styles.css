@@ -74,6 +74,7 @@ body {
     width: 380px;
     word-wrap: break-word;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .question {
@@ -82,8 +83,11 @@ body {
 
 .answer {
     color: var(--dark-gray-blue);
-    font-size: 14px;
-    margin-top: 15px;
+    font-size: 16px;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
 }
 
 .arrow {
@@ -98,7 +102,7 @@ body {
     width: 100%;
     height: 1px;
     background-color: var(--divider-blue);
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 
