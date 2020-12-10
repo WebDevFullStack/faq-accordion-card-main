@@ -17,8 +17,12 @@ function multipleAnswers(clickedElement) {
     var allQuestions = document.querySelectorAll(".question-wrapper");
     for (var i = 0; i < allQuestions.length; i++) {
         if (
-            allQuestions[i].classList.toString().includes("active-question") &&
-            allQuestions[i].classList !== clickedElement.classList
+            allQuestions[i]
+            .querySelector(".question")
+            .classList.toString()
+            .includes("active-question") &&
+            allQuestions[i].querySelector(".question").classList !==
+            clickedElement.querySelector(".question").classList
         ) {
             toggleQuestion(allQuestions[i]);
             arrowRotate(allQuestions[i]);
@@ -43,7 +47,7 @@ function displayAnswer(clickedElement) {
 }
 
 function toggleQuestion(clickedElement) {
-    clickedElement.classList.toggle("active-question");
+    clickedElement.querySelector(".question").classList.toggle("active-question");
 
     var answer = clickedElement.querySelector(".answer");
     // answer.classList.toggle("displayed");
