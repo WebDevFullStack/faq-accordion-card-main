@@ -30,13 +30,14 @@ body {
     margin-top: 200px;
     background-color: rgb(255, 255, 255);
     max-width: 990px;
+    max-height: 510px;
     border-radius: 30px;
     box-shadow: -3px 3px 70px rgba(0, 0, 0, 0.46);
 }
 
 .images-container {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
     padding-right: 100px;
     background-image: url("images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
@@ -45,6 +46,8 @@ body {
 }
 
 .person-img {
+    /* max-width: 500px; */
+    max-height: 400px;
     margin-left: -100px;
     height: 110%;
 }
@@ -68,24 +71,27 @@ body {
 
 .question-wrapper {
     position: relative;
-    max-width: 380px;
+    width: 380px;
     word-wrap: break-word;
     cursor: pointer;
 }
 
 .question {
-    color: var(--vdark-gray-blue)
+    color: var(--vdark-gray-blue);
 }
 
 .answer {
+    color: var(--dark-gray-blue);
+    font-size: 14px;
     margin-top: 15px;
 }
 
 .arrow {
+    font-size: small;
     position: relative;
-    margin-left: 50px;
-    margin-top: -20px;
+    margin-top: -3px;
     float: right;
+    transition: 0.4s;
 }
 
 .divider {
@@ -100,6 +106,7 @@ body {
 
 .hidden {
     display: none;
+    max-height: 0, overflow: hidden
 }
 
 .displayed {
@@ -108,6 +115,10 @@ body {
 
 .active-question {
     font-weight: 900;
+}
+
+.rotate-180 {
+    transform: rotate(180deg)
 }
 
 
