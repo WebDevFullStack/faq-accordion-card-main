@@ -63,7 +63,6 @@ function toggleQuestion(clickedElement) {
         answer.style.color = "var(--dark-gray-blue)";
     } else {
         answer.style.color = "white";
-        console.log(answer.style.color);
     }
 }
 
