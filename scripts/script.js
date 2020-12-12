@@ -69,7 +69,5 @@ function toggleQuestion(clickedElement) {
 
 function arrowRotate(clickedElement) {
     var arrow = clickedElement.querySelector(".arrow");
-    // Testing remove after test//
-    console.log(arrow);
     arrow.classList.toggle("rotate-180");
 }
