@@ -1,0 +1,169 @@
+/* this stylesheet contains all styles that should be present for all screen sizes
+f.e - fonts, colors and animation classes.  */
+
+:root {
+    /* --COLORS-- */
+    /* -TEXT-  */
+    --desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    /* neutral text */
+    --vdark-gray-blue: hsl(237, 12%, 33%);
+    --dark-gray-blue: hsl(240, 6%, 50%);
+    /* -Background gradient- */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    /* Dividers */
+    --divider-blue: hsl(240, 5%, 91%);
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    background: linear-gradient( 180deg, var(--soft-violet) 0%, var(--soft-blue) 83%);
+}
+
+
+/* //////////// */
+
+
+/* Color styles & Shadows*/
+
+
+/* //////////// */
+
+.main-container {
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 3px 70px rgba(0, 0, 0, 0.46);
+}
+
+.title {
+    color: var(--desaturated-blue);
+}
+
+.question {
+    color: var(--vdark-gray-blue);
+}
+
+.answer {
+    color: var(--dark-gray-blue);
+}
+
+.divider {
+    background-color: var(--divider-blue);
+}
+
+
+/* ///////////////// */
+
+
+/* font classes */
+
+
+/* ///////////////// */
+
+.active-question {
+    font-weight: 900;
+}
+
+.answer {
+    font-size: 16px;
+}
+
+.arrow {
+    font-size: small;
+}
+
+
+/* ///////////// */
+
+
+/* Positioning */
+
+
+/* ///////////// */
+
+.main-container {
+    margin: auto;
+}
+
+.faq-container {
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+
+/* ///////////// */
+
+
+/* details */
+
+
+/* ///////////// */
+
+.main-container {
+    border-radius: 30px;
+}
+
+.question-wrapper {
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+}
+
+
+/* ///////////////// */
+
+
+/* Animation classes */
+
+
+/* ///////////////// */
+
+.hidden {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.displayed {
+    display: block;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    /* FLOAT NEEDS TO STAY, OTHERWISE ANIMATION DOESNT WORK :/ FUCK KNOWS WHY LOL */
+    float: right;
+    transition: 0.4s;
+}
+
+
+/* /////////////////////// */
+
+
+/* Frontend mentor Styles */
+
+
+/* ///////////////////// */
+
+.attribution {
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    bottom: 0;
+}
