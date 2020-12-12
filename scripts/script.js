@@ -57,6 +57,14 @@ function toggleQuestion(clickedElement) {
     } else {
         answer.style.maxHeight = answer.scrollHeight + "px";
     }
+
+    // Change from white to grey
+    if (answer.style.color !== "var(--dark-gray-blue)") {
+        answer.style.color = "var(--dark-gray-blue)";
+    } else {
+        answer.style.color = "white";
+        console.log(answer.style.color);
+    }
 }
 
 function arrowRotate(clickedElement) {

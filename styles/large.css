@@ -56,4 +56,21 @@
 
 .divider {
     margin: 15px 0;
+    height: 1px;
+}
+
+
+/* /////////////////////// */
+
+
+/* Frontend mentor Styles */
+
+
+/* ///////////////////// */
+
+.attribution {
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    bottom: 0;
 }
